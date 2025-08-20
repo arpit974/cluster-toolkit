@@ -191,7 +191,6 @@ resource "google_compute_instance" "compute_vm" {
       labels = local.labels
     }
 
-    # This sets the device name to the old, more descriptive style.
     device_name = "${local.resource_prefix}-boot-disk-${count.index}"
 
     auto_delete = true
